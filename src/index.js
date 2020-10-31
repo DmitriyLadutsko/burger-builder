@@ -6,17 +6,16 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
-// const app = (
-//     <BrowserRouter>
-//         <App />
-//     </BrowserRouter>
-// );
+const app = (
+    <BrowserRouter>
+        <App />
+    </BrowserRouter>
+);
 
 ReactDOM.render(
-    // app
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>,
+    <React.StrictMode>
+        {app}
+    </React.StrictMode>,
   document.getElementById('root')
 );
 
