@@ -8,7 +8,6 @@ import Orders from './containers/Orders/Orders';
 
 class App extends Component {
   render () {
-    debugger
     return (
       <div>
         <Layout>
