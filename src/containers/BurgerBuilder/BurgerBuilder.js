@@ -22,14 +22,17 @@ class BurgerBuilder extends Component {
     }
 
     componentDidMount() {
-        console.log(this.props);
-        axios.get('ingredients.json')
-            .then(response => {
-                this.setState({ingredients: response.data});
-            })
-            .catch(error => {
-                this.setState({error: true});
-            });
+        console.log('[BurgerBuilder2]',this.props);
+        // axios.get('ingredients.json')
+        //     .then(response => {
+        //         this.setState({ingredients: response.data});
+        //     })
+        //     .catch(error => {
+        //         this.setState({error: true});
+        //     });
+    }
+    shouldComponentUpdate(nextProps, nextState, nextContext) {
+        console.log('[BurgerBuilder3]', this.props)
     }
 
     updatePurchaseState(ingredients) {
@@ -56,6 +59,8 @@ class BurgerBuilder extends Component {
     }
 
     render() {
+        console.log('[BurgerBuilder1]',this.props);
+
         const disabledInfo = {
             ...this.props.ings
         };
@@ -100,6 +105,7 @@ class BurgerBuilder extends Component {
 }
 
 const mapStateToProps = state => {
+    console.log('[BBState]', state)
     return {
         ings: state.ingredients,
         price: state.totalPrice
