@@ -31,9 +31,6 @@ class BurgerBuilder extends Component {
         //         this.setState({error: true});
         //     });
     }
-    shouldComponentUpdate(nextProps, nextState, nextContext) {
-        console.log('[BurgerBuilder3]', this.props)
-    }
 
     updatePurchaseState(ingredients) {
         const sum = Object.keys(ingredients)
@@ -75,7 +72,7 @@ class BurgerBuilder extends Component {
                 <>
                     <Burger ingredients={this.props.ings}/>
                     <BuildControls
-                        ingredientAdded={this.props.onIngredientAdded()}
+                        ingredientAdded={this.props.onIngredientAdded}
                         ingredientRemoved={this.props.onIngredientRemoved}
                         disabled={disabledInfo}
                         purchasable={this.updatePurchaseState(this.props.ings)}
