@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# Useful Resources & Links
+- create-react-app: https://github.com/facebookincubator/create-react-app
+- Introducing JSX: https://reactjs.org/docs/introducing-jsx.html
+- Rendering Elements: https://reactjs.org/docs/rendering-elements.html
+- Components & Props: https://reactjs.org/docs/components-and-props.html
+- Listenable Events: https://reactjs.org/docs/events.html
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## List & Conditional
+- Conditional Rendering: https://reactjs.org/docs/conditional-rendering.html
+- Lists & Keys: https://reactjs.org/docs/lists-and-keys.html
 
-## Available Scripts
+## Styling React Components
+- Using CSS Modules in create-react-app Projects: https://medium.com/nulogy/how-to-use-css-modules-with-create-react-app-9e44bec2b5c2
+- More information about CSS Modules: https://github.com/css-modules/css-modules
 
-In the project directory, you can run:
+## Debugging
+- Error Boundaries: https://reactjs.org/docs/error-boundaries.html
+- Chrome Devtool Debugging: https://developers.google.com/web/tools/chrome-devtools/javascript/
 
-### `npm start`
+## Diving Deeper
+- More on useEffect(): https://reactjs.org/docs/hooks-effect.html
+- State & Lifecycle: https://reactjs.org/docs/state-and-lifecycle.html
+- PropTypes: https://reactjs.org/docs/typechecking-with-proptypes.html
+- Higher Order Components: https://reactjs.org/docs/higher-order-components.html
+- Refs: https://reactjs.org/docs/refs-and-the-dom.html
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Reaching out to the Web (Http /Ajax)
+- Axios Docs: https://github.com/axios/axios
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Removing Interceptors  
+You learned how to add an interceptor, getting rid of one is also easy. Simply store the reference to the interceptor in a variable and call eject  with that reference as an argument, to remove it (more info: https://github.com/axios/axios#interceptors):
 
-### `npm test`
+`var myInterceptor = axios.interceptors.request.use(function () {/*...*/});`
+`axios.interceptors.request.eject(myInterceptor);`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Multi-Page-Feeling in a Single-Page-App: Routing
+- React Router Docs: https://reacttraining.com/react-router/web/guides/philosophy
 
-### `npm run build`
+## Forms and Form Validation
+- Validate.js (you may import its functionality into your React projects): https://validatejs.org/
+- Get more ideas about potential validation approaches: https://react.rocks/tag/Validation
+### Alternatives to the manual approach taken in this course:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- react-validation package: https://www.npmjs.com/package/react-validation
+- formsy-react package: https://github.com/christianalfoni/formsy-react
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Redux
+- Redux Docs: https://redux.js.org/
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Core Concepts: https://redux.js.org/introduction/core-concepts
 
-### `npm run eject`
+- Actions: https://redux.js.org/basics/actions
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Reducers: https://redux.js.org/basics/reducers
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- Redux FAQs: https://redux.js.org/faq
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Redux Advanced
+- Middleware: https://redux.js.org/advanced/middleware/
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- redux-thunk package: https://github.com/gaearon/redux-thunk
 
-## Learn More
+- Async Actions: https://redux.js.org/advanced/async-actions
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## SPA Authentication
+- SPA Authentication in general: https://stormpath.com/blog/token-auth-spa
+- Firebase authentication REST API: https://firebase.google.com/docs/reference/rest/auth/ 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Testing
+- Enzyme API: http://airbnb.io/enzyme/docs/api/
+- Jest Docs: https://facebook.github.io/jest/
